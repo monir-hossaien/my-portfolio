@@ -9,4 +9,127 @@
 
 body{
     font-family: "Outfit", sans-serif;
+    background-color: #000;
+    color: #fff;
 }
+.container{
+    width: 80%!important;
+}
+
+/* navbar starts */
+nav{
+    & .navbar-brand{
+        font-size: 35px;
+        & span{
+            color: #FA0452;
+        }
+    }
+    & .nav-link{
+        font-size: 17px;
+        font-weight: 700;
+        color: #fff;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+/* navbar end */
+
+#hero{
+    padding: 2rem 0;
+    & .wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & h4{
+            font-weight: 400;
+        }
+        & .title{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.5;
+            & span{
+                color: #FA0452;
+            }
+        }
+    }
+}
+
+/* about */
+
+#about{
+    padding: 4rem 0;
+    & .card{
+        width: 337px;
+        height: 430px;
+        background-color: #2b2b2bd8;
+        padding: 1rem;
+        border: none;
+        border-radius: 0.8rem;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & .title{
+        font-size: 43px;
+        font-weight: 500;
+    }
+    & .des{
+        font-size: 16px;
+        color: #b8b8b8;
+        margin-top: 1rem;
+    }
+    /* --------tab------------- */
+    & .tab-title{
+        & .tab-links{
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 3px;
+                left: 0;
+                bottom: -8px;
+                background-color: #FA0452;
+                transition: 0.3s;
+            }
+            
+        }
+        & .active-link::after{
+            width: 70%;
+
+        }
+    }
+    & .tab-contents{
+        display: none;
+        & ul{
+            padding-left: 0;
+        }
+        & li{
+            color: #b8b8b8;
+            list-style: none;
+            margin:1rem 0;
+            line-height: 1.5rem;
+            font-size: 14px;
+            & span{
+                color: #FA0452;
+                font-weight: 600;
+                
+            }
+        }
+    
+    }
+    & .active-tab{
+        display: block;
+    }
+
+}
+
+
+

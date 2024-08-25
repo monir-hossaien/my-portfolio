@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap css -->
+    <!--------bootstrap css-------- -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- custom css -->
+    <!--------custom css------ -->
     <link rel="stylesheet" href="css/style.css">
     <title>portfolio</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!--------navbar--------- -->
+    
+    <nav class="navbar navbar-expand-lg bg-black">
         <div class="container">
-          <a class="navbar-brand" href="#"><span>M</span>onir.</a>
+          <!-- logo -->
+          <a class="navbar-brand text-white" href="#"><span>M</span>onir.</a>
+          
+          <!-- toggler button -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          
+          <!-- navbar-menu -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-md-3 ">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link " aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Services</a>
+                <a class="nav-link " aria-current="page" href="#">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Portfolio</a>
@@ -38,9 +45,77 @@
             
           </div>
         </div>
-      </nav>
+    </nav>
+      
+    <!---------hero section------- -->
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wrapper">
+              <h4>Web Developer</h4>
+              <h2 class="title">Hi, I'm <span>Monir</span><br>Hossain From Bangladesh</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="./images/monir.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- --------about section----------- -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
 
-    <script src="./js//script.js"></script>
+          <!-- -------img section---------- -->
+          <div class="col-md-5">
+            <div class="card">
+              <img src="./images/monir.png" alt="about.png" class="img-fluid">
+            </div>
+          </div>
+          <!------------about details --------------->
+          <div class="col-md-7">
+            <h1 class="title">About Me</h1>
+            <p class="des">Hello! I'm Monir Hossain, a passionate full-stack developer with a strong foundation in both front-end and back-end technologies. With 1 year 5 months experience, I specialize in creating dynamic, responsive web applications that provide intuitive user experiences</p>
+
+            <!-- ---------tab-link-------- -->
+
+            <div class="tab-title d-flex gap-5">
+              <p class="tab-links active-link" onclick="openTab('skill')">Skills</p>
+              <p class="tab-links" onclick="openTab('experience')">Experience</p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            
+            <!-- -----------tab-content----------- -->
+            <div class="tab-contents active-tab" id="skill">
+              <ul>
+                <li><span>Web Development</span><br>Website Design and Development</li>
+                <li><span>Customer Support</span><br>Customer support solves problems and answers questions through different channels.</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022-Current</span><br>Website Design and Development at Self-employed</li>
+                <li><span>2020-Current</span><br>Customer Support Executive at Banglalink .</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024</span><br>Full-stack Development training at Ostad</li>
+                <li><span>2021</span><br>BSC from National University of Bangladesh.</li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+<script src="./js/bootstrap.bundle.js"></script>
+<script src="./js//script.js"></script>
 </body>
 </html>
