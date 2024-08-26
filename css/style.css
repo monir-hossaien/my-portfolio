@@ -24,19 +24,37 @@ nav{
             color: #FA0452;
         }
     }
-    & .nav-link{
-        font-size: 17px;
-        font-weight: 700;
-        color: #fff;
-        &:hover{
+    & ul{
+        & li a{
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
             color: #fff;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                position: absolute;
+                width:0;
+                height: 3px;
+                left: 0;
+                bottom: -8px;
+                background-color: #FA0452;
+                transition: all 0.5s;
+            }
+            
         }
+        & li a:hover::after{
+            width: 100%;
+        }
+    
+    
     }
 }
 /* navbar end */
 
 #hero{
-    padding: 2rem 0;
+    padding: 4rem 0;
     & .wrapper{
         width: 100%;
         height: 100%;
@@ -131,5 +149,188 @@ nav{
 
 }
 
+/* ---------service section---------- */
+
+#service-section{
+    padding: 3rem 0;
+    & .title{
+        font-size: 35px;
+        font-weight: 500;
+    }
+    & .card{
+        background-color:#2b2b2bd8;
+        color: #fff;
+        margin: 1.5rem 0;
+        padding: 1.8rem;
+        transition: 0.3s;
+        & .sub-title{
+            font-size: 20px;
+        }
+        & .des{
+            font-size: 0.9rem;
+            color: #b8b8b8;
+        }
+        & a{
+            text-decoration: none;
+            color: #FA0452;
+            & i{
+                font-size: 12px;
+            }
+        }
+        &:hover{
+            transform: translateY(-8px);
+            background-color: #FA0452;
+            & .des{
+                color: #fff;
+            }
+            & a{
+                color: #fff;
+            }
+        }
+    }
+}
+
+/* ----------portfolio-------- */
+
+#portfolio{
+    padding: 3.5rem 0;
+    & .title{
+        font-size: 35px;
+        font-weight: 500;
+
+    }
+    & .work{
+        padding: 1.2rem;
+        background-color: #2b2b2bd8;
+        margin: 1.5rem 0;
+        overflow: hidden;
+        border-radius: 10px;
+        & img{
+            width: 100%;
+            height: 140px;
+            border-radius: 10px;
+            display: block;
+            transition: 0.3s;
+        }
+        &:hover{
+            img{
+                transform: scale(1.1);
+                
+            }
+            
+            
+        }
+        & .layer{
+            & h3{
+                margin: 1rem 0;
+            }
+            p{
+                font-size: 0.8rem;
+                color: #b8b8b8;
+            }
+            & a{
+                width: 35px;
+                height: 35px;
+                padding: 1.2rem;
+                border-radius: 50%;
+                background-color: #fff;
+                color: #FA0452;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+    }
+    
+}
+
+/* -- ------------contact------------ -- */
+#contact-section{
+    padding: 4rem 0;
+    & .title{
+        font-size: 35px;
+        font-weight: 500;
+        margin: 1rem 0;
+    }
+    & p{
+        font-size: 0.8rem;
+        & span{
+            color: #FA0452;
+            margin-right: 3px;
+        }
+    }
+    & .social-icon{
+
+        & a{
+            margin: 0.3rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            align-items: center;
+            background-color: #969696;
+            color: #000;
+            border-radius: 50%;
+            &:hover{
+                background-color: #FA0452;
+            }
+        }
+    }
+    & .btn{
+        padding: 0.5rem 1rem;
+        background-color: #FA0452;
+        margin: 1.5rem 0;
+        font-size: 0.9rem;
+        color: #fff;
+    }
+    & form{
+        
+        & input{
+            margin: 1.5rem 0;
+            background-color: #2b2b2bd8;
+            border: none;
+            color: #fff;
+            
+        }
+        & .form-control{
+            
+            &:focus{
+                box-shadow: 0px 0px 5px 0px rgba(237,12,87,1);
+                
+            }
+            &::placeholder{
+                font-size: 0.9rem;
+                color: #b8b8b8;
+            }
+        }
+        & textarea{
+            background-color: #2b2b2bd8;
+            border: none;
+            resize: none;
+            color: #fff;
+            &::placeholder{
+                font-size: 0.9rem;
+                color: #b8b8b8;
+            }
+        }
+    }
+}
+
+/* -----------footer---------- */
+#footer-section{
+    padding: 2rem 0;
+    background-color: #2b2b2bd8;
+    text-align: center;
+    & p{
+        margin-bottom: 0;
+        color: #b8b8b8;
+        & i{
+            color: #FA0452;
+        }
+    }
+    
+}
 
 

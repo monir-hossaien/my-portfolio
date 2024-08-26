@@ -1,121 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--------bootstrap css-------- -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!--------custom css------ -->
-    <link rel="stylesheet" href="css/style.css">
-    <title>portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- -------font awesome--------- -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!--------bootstrap css-------- -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  
+  <!--------custom css------ -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>portfolio</title>
 </head>
+
 <body>
-    <!--------navbar--------- -->
-    
-    <nav class="navbar navbar-expand-lg bg-black">
-        <div class="container">
-          <!-- logo -->
-          <a class="navbar-brand text-white" href="#"><span>M</span>onir.</a>
+  <!--------navbar--------- -->
+
+  <nav class="navbar navbar-expand-lg bg-black sticky-top">
+    <div class="container">
+      <!-- logo -->
+      <a class="navbar-brand text-white" href="#"><span>M</span>onir.</a>
+
+      <!-- toggler button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"   data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- navbar-menu -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-md-4">
+          <li class="nav-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a  href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a  href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a  href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!---------hero section------- -->
+  <section id="hero">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="wrapper">
+            <h4>Web Developer</h4>
+            <h2 class="title">Hi, I'm <span>Monir</span><br>Hossain From Bangladesh</h2>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <img src="./images/monir.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------about section----------- -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <!-- -------img section---------- -->
+        <div class="col-md-5">
+          <div class="card">
+            <img src="./images/monir.png" alt="about.png" class="img-fluid">
+          </div>
+        </div>
+        <!------------about details --------------->
+        <div class="col-md-7">
+          <h1 class="title">About Me</h1>
+          <p class="des">Hello! I'm Monir Hossain, a passionate full-stack developer with a strong foundation in both
+            front-end and back-end technologies. With 1 year 5 months experience, I specialize in creating dynamic,
+            responsive web applications that provide intuitive user experiences
+          </p>
           
-          <!-- toggler button -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <!-- ---------tab-link-------- -->
           
-          <!-- navbar-menu -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-md-3 ">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-             
+          <div class="tab-title d-flex gap-5">
+            <p class="tab-links active-link" onclick="openTab('skill')">Skills</p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+
+          <!-- -----------tab-content----------- -->
+          
+          <div class="tab-contents active-tab" id="skill">
+            <ul>
+              <li><span>Web Development</span><br>Website Design and Development</li>
+              <li><span>Customer Support</span><br>Customer support solves problems and answers questions through
+                different channels.</li>
             </ul>
-            
           </div>
-        </div>
-    </nav>
-      
-    <!---------hero section------- -->
-    <section id="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="wrapper">
-              <h4>Web Developer</h4>
-              <h2 class="title">Hi, I'm <span>Monir</span><br>Hossain From Bangladesh</h2>
-            </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2022-Current</span><br>Website Design and Development at Self-employed</li>
+              <li><span>2020-Current</span><br>Customer Support Executive at Banglalink .</li>
+            </ul>
           </div>
-          <div class="col-md-6">
-            <img src="./images/monir.png" alt="" class="img-fluid">
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2024</span><br>Full-stack Development training at Ostad</li>
+              <li><span>2021</span><br>BSC from National University of Bangladesh.</li>
+            </ul>
           </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- --------about section----------- -->
-    <section id="about">
-      <div class="container">
-        <div class="row">
+  <!-- --------service section----------- -->
 
-          <!-- -------img section---------- -->
-          <div class="col-md-5">
+  <section id="service-section">
+    <div class="container">
+      <h1 class="title">My Services</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="wrapper">
+              <div class="card">
+                <i class="fa-solid fa-code fa-2x mb-3"></i>
+                <h2 class="sub-title">Web Design</h2>
+                <p class="des">Web design focuses on creating visually appealing and user-friendly websites. It blends layout, color, typography
+                </p>
+                <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="wrapper">
             <div class="card">
-              <img src="./images/monir.png" alt="about.png" class="img-fluid">
+              <i class="fa-solid fa-crop fa-2x mb-3"></i>
+              <h2 class="sub-title">Web Development</h2>
+              <p class="des">Web development focuses on building and maintaining functional websites through coding and programming.
+              </p>
+              <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="wrapper">
+            <div class="card">
+              <i class="fa-solid fa-headset fa-2x mb-3"></i>
+              <h2 class="sub-title">24/7 Support</h2>
+              <p class="des">Customer support helps resolve issues and answer questions to ensure a positive experience.
+              </p>
+              <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -----------portfolio--------- -->
+
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="title">My Work</h1>
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="work">
+            <img src="./images/digital-agency.PNG" alt="work-1.png" class="img-fluid">
+            <div class="layer">
+              <h3>Digital Agency</h3>
+              <p>A digital agency boosts online presence with services like web design, marketing, and content creation.
+              </p>
+              <a href="https://digital-agency-service.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
             </div>
           </div>
-          <!------------about details --------------->
-          <div class="col-md-7">
-            <h1 class="title">About Me</h1>
-            <p class="des">Hello! I'm Monir Hossain, a passionate full-stack developer with a strong foundation in both front-end and back-end technologies. With 1 year 5 months experience, I specialize in creating dynamic, responsive web applications that provide intuitive user experiences</p>
+        </div>
 
-            <!-- ---------tab-link-------- -->
+        <div class="col-md-4">
+          <div class="work">
+            <img src="./images/weather.PNG" alt="work-1.png" class="img-fluid">
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>A weather app provides current and forecasted weather conditions, including temperature, precipitation, and wind speed.
+              </p>
+              <a href="https://practice-weather-app3.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
 
-            <div class="tab-title d-flex gap-5">
-              <p class="tab-links active-link" onclick="openTab('skill')">Skills</p>
-              <p class="tab-links" onclick="openTab('experience')">Experience</p>
-              <p class="tab-links" onclick="openTab('education')">Education</p>
+        <div class="col-md-4">
+          <div class="work">
+            <img src="./images/e-commerce.PNG" alt="work-1.png" class="img-fluid">
+            <div class="layer">
+              <h3>Online Shop</h3>
+              <p>An online shop sells products or services through the internet, offering browsing, purchasing, and delivery options.
+              </p>
+              <a href="https://monirhdigital-e-commerce.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
             </div>
-            
-            <!-- -----------tab-content----------- -->
-            <div class="tab-contents active-tab" id="skill">
-              <ul>
-                <li><span>Web Development</span><br>Website Design and Development</li>
-                <li><span>Customer Support</span><br>Customer support solves problems and answers questions through different channels.</li>
-              </ul>
-            </div>
+          </div>
+        </div>
 
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li><span>2022-Current</span><br>Website Design and Development at Self-employed</li>
-                <li><span>2020-Current</span><br>Customer Support Executive at Banglalink .</li>
-              </ul>
+        <div class="col-md-4">
+          <div class="work">
+            <img src="./images/to-do.PNG" alt="work-1.png" class="img-fluid">
+            <div class="layer">
+              <h3>Online Shop</h3>
+              <p>An online shop sells products or services through the internet, offering browsing, purchasing, and delivery options.
+              </p>
+              <a href="https://to-dos2.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
             </div>
+          </div>
+        </div>
 
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>2024</span><br>Full-stack Development training at Ostad</li>
-                <li><span>2021</span><br>BSC from National University of Bangladesh.</li>
-              </ul>
+        <div class="col-md-4">
+          <div class="work">
+            <img src="./images/captain.PNG" alt="work-1.png" class="img-fluid">
+            <div class="layer">
+              <h3>Captain Clone</h3>
+              <p>Captain Binary programming problems usually involve challenges related to binary numbers and operations.
+              </p>
+              <a href="https://captain-bainary.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
             </div>
-            
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-<script src="./js/bootstrap.bundle.js"></script>
-<script src="./js//script.js"></script>
+  <!-- ------------contact------------ -->
+
+  <section id="contact-section">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-5">
+          <h1 class="title">Contact Me</h1>
+          <p><span><i class="fa-regular fa-paper-plane"></i></span> monirhdigital@gmail.com</p>
+          <p><span><i class="fa-solid fa-square-phone"></i></span> +880-1787960556</p>
+          <div class="social-icon d-flex gap-2">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <a href="images/Monir Hossain (1).pdf" download class="btn">Download CV</a>
+        </div>
+        
+        <div class="col-md-7">
+          <form action="">
+            <input class="form-control" type="text" name="" id="" required placeholder="Your Name">
+            <input class="form-control" type="email" name="" id="" required placeholder="Your Email">
+            <textarea class="form-control" id="" placeholder="Your Message" required rows="5"></textarea>
+            <Button class="btn w-25">Submit</Button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ---------footer--------- -->
+  <section id="footer-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <p>Copy write <i class="fa-regular fa-copyright"></i> 2024 Monir Hossain</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./js//script.js"></script>
 </body>
+
 </html>
