@@ -16,7 +16,7 @@
 
     /* ----hero---- */
     #hero{
-        margin: 7rem 0;
+        margin: 9rem 0;
         & .wrapper{
             & h4{
                 font-size: 22px;
