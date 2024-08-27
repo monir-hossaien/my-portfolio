@@ -12,6 +12,11 @@
             color: #fff;
             font-size: 2rem;    
         }
+        & ul{
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+        }
     }
 
     /* ----hero---- */
@@ -30,7 +35,7 @@
             width: 350px;
             height: 380px;
             position: absolute;
-            top: 123px;
+            top: 188px;
             right: 0;
             
         }
