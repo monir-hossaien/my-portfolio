@@ -41,6 +41,13 @@
             
         }
     }
+    #contact-section{
+        & .msg-style{
+            margin-right: 1.5rem;
+            font-size: 0.7rem;
+        }
+    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

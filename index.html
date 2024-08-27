@@ -37,19 +37,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-md-4 gap-3 mt-3 mt-lg-0">
           <li class="nav-item">
-            <a href="#">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li class="nav-item">
-            <a  href="#">About</a>
+            <a  href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a  href="#">Services</a>
+            <a  href="#service-section">Services</a>
           </li>
           <li class="nav-item">
-            <a  href="#">Portfolio</a>
+            <a  href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a href="#">Contact</a>
+            <a href="#contact-section">Contact</a>
           </li>
 
         </ul>
@@ -265,12 +265,13 @@
         </div>
         
         <div class="col-md-7">
-          <form action="">
-            <input class="form-control" type="text" name="" id="" required placeholder="Your Name">
-            <input class="form-control" type="email" name="" id="" required placeholder="Your Email">
-            <textarea class="form-control" id="" placeholder="Your Message" required rows="5"></textarea>
-            <Button class="btn w-25">Submit</Button>
+          <form name="submit-to-google-sheet">
+            <input class="form-control" type="text" name="Name" id="" required placeholder="Your Name">
+            <input class="form-control" type="email" name="Email" id="" required placeholder="Your Email">
+            <textarea class="form-control mb-3" name="Message" placeholder="Your Message" required rows="5"></textarea>
+            <Button class="btn btn2">Submit</Button>
           </form>
+          <p id="msg"></p>
           
         </div>
       </div>

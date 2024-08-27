@@ -12,6 +12,9 @@ body{
     background-color: #000;
     color: #fff;
 }
+html{
+    scroll-behavior: smooth;
+}
 .container{
     width: 80%!important;
 }
@@ -54,7 +57,7 @@ nav{
 /* navbar end */
 
 #hero{
-    padding: 4rem 0;
+    padding: 6rem 0;
     & .wrapper{
         width: 100%;
         height: 100%;
@@ -79,7 +82,7 @@ nav{
 /* about */
 
 #about{
-    padding: 4rem 0;
+    padding: 7rem 0;
     & .card{
         width: 337px;
         height: 430px;
@@ -153,7 +156,7 @@ nav{
 /* ---------service section---------- */
 
 #service-section{
-    padding: 3rem 0;
+    padding: 7rem 0;
     & .title{
         font-size: 35px;
         font-weight: 500;
@@ -194,7 +197,7 @@ nav{
 /* ----------portfolio-------- */
 
 #portfolio{
-    padding: 3.5rem 0;
+    padding: 8rem 0;
     & .title{
         font-size: 35px;
         font-weight: 500;
@@ -248,7 +251,7 @@ nav{
 
 /* -- ------------contact------------ -- */
 #contact-section{
-    padding: 4rem 0;
+    padding: 8rem 0 4rem 0;
     & .title{
         font-size: 35px;
         font-weight: 500;
@@ -316,12 +319,32 @@ nav{
                 color: #b8b8b8;
             }
         }
+        & .btn2{
+            width: 135px;
+        }
+    }
+    
+}
+& #contact-section{
+    position: relative;
+    & .msg-style{
+        color: #656363;
+        font-size: 0.9rem;
+        display: inline-block;
+        padding: 0.5rem 0.8rem;
+        margin-right: 5rem;
+        border-left: 15px solid rgb(102, 228, 102);
+        background-color: rgb(149, 225, 149);
+        position: absolute;
+        right: 0;
+        bottom: 27px;
+        
     }
 }
 
 /* -----------footer---------- */
 #footer-section{
-    padding: 2rem 0;
+    padding: 1rem 0;
     background-color: #2b2b2bd8;
     text-align: center;
     & p{
